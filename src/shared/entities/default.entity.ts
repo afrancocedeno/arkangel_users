@@ -1,12 +1,9 @@
 import { Column, CreateDateColumn, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm"
 
-export class BaseModel {
+export abstract class DefaultEntity {
 
-  @PrimaryGeneratedColumn()
+  @PrimaryGeneratedColumn('uuid')
   id: number
-
-  @Column({ name: 'investment_type', type: 'varchar', length: 255, unique: false })
-  invType: string
 
   @CreateDateColumn({ name: 'created_at', default: () => 'CURRENT_TIMESTAMP' })
   createDate: string

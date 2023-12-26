@@ -13,13 +13,13 @@ export class UserService {
 
     @InjectRepository(User) private userRepo: Repository<User>,
 
-  ) {}
+  ) { }
 
   async create(payload: CreateUserDto) {
 
     const newUser = this.userRepo.create(payload)
 
-    // 10 iterations
+    // 10 hash iterations
     const hashedPassword = await bcrypt.hash(newUser.password, 10)
     newUser.password = hashedPassword
 
