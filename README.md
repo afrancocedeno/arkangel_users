@@ -10,12 +10,10 @@ sudo docker-compose up -d postgres
 ```
 
 ## resources
-- (nest)[https://docs.nestjs.com/]
-- (nest cli)[https://docs.nestjs.com/cli/usages]
-- (nest and typeorm integration)[https://docs.nestjs.com/techniques/database]
-- (typeorm)[https://typeorm.io/]
-- ()[]
-- ()[]
+- [nest](https://docs.nestjs.com/)
+- [nest cli](https://docs.nestjs.com/cli/usages)
+- [nest and typeorm integration](https://docs.nestjs.com/techniques/database)
+- [typeorm](https://typeorm.io/)
 
 ## considerations
 - use a white brand nestjs app
